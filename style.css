@@ -1,0 +1,144 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+/* Tăng chiều rộng container để có không gian cho form to */
+.fb-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  gap: 40px; /* Khoảng cách giữa 2 cột */
+}
+
+.page-wrapper { display: flex; flex-direction: column; min-height: 100vh; }
+.main-content { flex-grow: 1; display: flex; align-items: center; padding: 40px 20px; }
+
+/* CHIA TỶ LỆ 1:1 */
+.left-panel { flex: 1; }
+.right-panel { 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+}
+
+/* SLOGAN DỌC */
+.slogan { 
+  font-size: 68px; 
+  font-weight: 800; 
+  line-height: 1.05; 
+  letter-spacing: -2px; 
+  margin: 20px 0 30px; 
+}
+.blue-text { color: #1877f2; }
+.featured-img { width: 100%; height: auto; border-radius: 12px; }
+
+/* FORM ĐĂNG NHẬP TO (JUMBO SIZE) */
+.larger-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 16px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Tăng padding cực rộng */
+  width: 100%;
+  max-width: 550px; /* ĐỘ RỘNG MỚI ĐỂ TO BẰNG HÌNH ẢNH */
+  text-align: center;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.main-input {
+  width: 100%;
+  height: 60px; /* Tăng chiều cao input */
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid #dddfe2;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.jumbo-btn {
+  width: 100%;
+  height: 56px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.jumbo-btn-create {
+  background-color: #42b72a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  height: 56px;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.divider { border-bottom: 1px solid #dadde1; margin: 30px 0; }
+
+.meta-text { margin-top: 30px; font-size: 15px; color: #777; }
+
+/* FOOTER */
+.footer { background: #fff; padding: 40px 0; color: #737373; margin-top: auto; }
+.footer-inner { flex-direction: column; max-width: 1200px; }
+.footer-languages, .footer-links { display: flex; flex-wrap: wrap; gap: 15px; font-size: 13px; margin-bottom: 12px; }
+.footer-languages a, .footer-links a { text-decoration: none; color: #8a8d91; }
+.footer-divider { border-top: 1px solid #dddfe2; margin: 15px 0; }
+.copyright { font-size: 12px; margin-top: 20px; }
+
+/* Responsive cho tablet/mobile */
+@media (max-width: 1000px) {
+  .fb-container { flex-direction: column; align-items: center; }
+  .left-panel { text-align: center; }
+  .slogan { font-size: 48px; }
+}
+/* Responsive cho Điện thoại và Tablet nhỏ */
+@media (max-width: 900px) {
+  .fb-container {
+    flex-direction: column; /* Chuyển từ hàng ngang sang hàng dọc */
+    text-align: center;
+    padding-top: 20px;
+    gap: 40px;
+  }
+
+  .left-panel {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .fb-logo-wrap img {
+    width: 150px; /* Logo to ra một chút để làm điểm nhấn */
+    margin: 0 auto;
+  }
+
+  .slogan {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .image-box {
+    display: none; /* Ẩn bớt hình ảnh phụ trên mobile để gọn hơn */
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
